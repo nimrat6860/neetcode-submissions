@@ -1,8 +1,6 @@
 class Solution {
     public int trap(int[] height) {
         int n = height.length;
-        int left = 0;
-        int right = height.length - 1;
         int prefixMax[] = new int[n];
         prefixMax[0] = height[0];
         int suffixMax[] = new int[n];
